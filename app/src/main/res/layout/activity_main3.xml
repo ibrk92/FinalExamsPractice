@@ -8,11 +8,20 @@
 
     <TextView
         android:id="@+id/showText"
-        android:layout_width="232dp"
-        android:layout_height="84dp"
-        android:layout_marginStart="74dp"
-        android:layout_marginTop="130dp"
+        android:layout_width="254dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="48dp"
         android:text="TextView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/showDateText"
+        android:layout_width="247dp"
+        android:layout_height="93dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="167dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

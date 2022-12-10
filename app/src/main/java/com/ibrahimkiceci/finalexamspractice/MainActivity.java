@@ -71,6 +71,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             Intent intent =  new Intent(MainActivity.this, MainActivity2.class);
             startActivity(intent);
             Toast.makeText(this, "Tiklandi", Toast.LENGTH_SHORT).show();
+        }else if(item.getItemId() == R.id.datePicker){
+            Intent intent = new Intent(MainActivity.this, MainActivity4.class);
+            startActivity(intent);
         }
 
        return true;

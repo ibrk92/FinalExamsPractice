@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.TimePicker;
 
 public class MainActivity2 extends AppCompatActivity {
+
+    //Time Activity
     TimePicker timePicker;
     SharedPreferences sharedPreferences;
 
