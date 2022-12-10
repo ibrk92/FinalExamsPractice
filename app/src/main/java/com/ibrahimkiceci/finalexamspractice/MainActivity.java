@@ -23,6 +23,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     ActionBarDrawerToggle actionBarDrawerToggle;
     NavigationView navigationView;
 
+    //
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,8 +59,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     // Navigation Drawerindaki itemlarin tiklanabilir olabilmesi icin sunlari yapman gerekir. Oncelikle classina sunu ekliyorsun
     //1. implements NavigationView.OnNavigationItemSelectedListener
     //2. Main activitydeki layout'unda navigationview var orda ona id ver, ardindan on create ine su kodlari yaz;
-         // navigationView = findViewById(R.id.nav_view);
-        //navigationView.setNavigationItemSelectedListener(this);
+    // navigationView = findViewById(R.id.nav_view);
+    //navigationView.setNavigationItemSelectedListener(this);
     //3. Daha sonra zaten implement edince methodlari ekle dite cikiyor onNavigationItemSelected oraya getId'ne gore kodlari yaz
 
 
@@ -66,7 +68,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
         if (item.getItemId() == R.id.timePicker){
-            Intent intent =  new Intent(MainActivity.this, TimePicker.class);
+            Intent intent =  new Intent(MainActivity.this, MainActivity2.class);
             startActivity(intent);
             Toast.makeText(this, "Tiklandi", Toast.LENGTH_SHORT).show();
         }
